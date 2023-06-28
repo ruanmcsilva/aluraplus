@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-while-principal: #ffffff;
+    --cor-black-fundo: #00030c;
+    --cor-gray-secundary:  #c0c0c0;
+    --cor-blue:  #167bf7;
+    --fonte-primary: 'inter';
+}
+
+body {
+    background-color: var(--cor-black-fundo);
+    color: var(--cor-while-principal);
+    font-family: var(--fonte-primary);
+    font-size: 16px; /*tamanho da letra*/
+    font-weight: 400px; /*peso da letra*/
+}
+
+.principal {
+    background-image: url("img/Background.png");/*Imagem de fundo *Decoração +-*/
+    background-repeat: no-repeat;/*Para não repetir a imagem*/
+    background-size: contain; /*tamanho ajustado +-*/
+    text-align: center;
+    align-items: center; /*para centralizar tudo dentro do block*/
+}
+
+.container {
+    height: 100vh; /*VH ser para preencher toda a tela do dispositivo*/
+    display: grid; /*Difizao de tela espaçamento*/
+    grid-template-columns: 50% 50%; /*Difizao de tela espaçamento */
+    
+}
+
+.container_botao {
+    background-color: var(--cor-blue); /*Cor de fundo*/
+    border-radius: 5px; /*Bordas*/
+    padding: 1em; /*espaço interno*/
+    color: var(--cor-while-principal); /*Cor da letra*/
+    display: block; /*Para nao fica tudo em uma linha*/
+    /*
+    width: 12em; (Espaço lateral)
+    text-align: center; (Alinhamento do texto)*/
+    text-decoration: none;/*Decoração de texto*/
+    margin-bottom: 1em;
+    
+}
+.container_botao:hover{
+    color: blueviolet;
+    background-color: var(--cor-while-principal);
+}
+
+.botao_secundary {
+    background-color: transparent;
+    color: var(--cor-while-principal);
+    border: 2px solid var(--cor-while-principal); /*Para fazer uma borda*/
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cor-gray-secundary);
+}
+
+.containe_titulo {
+    font-size: 28px; /*Tamanho da fonte*/
+    font-weight: 700px; /*Peso da fonte*/
+    margin: 2em 0 2em 0;
+    
+}
+
+.container_img {
+    margin: 1em 0 2em, 0; /*margem dos lados*/
+}
+
+.container_caixa {
+    margin:0 6em;
+}
+
+.secundario-img {
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+    
+}
+
+.descricao_titulo {
+    
+    font-size: 48px;
+    font-weight: 700;
+    color:var(--cor-while-principal);
+    margin-bottom: 0.1em;
+    
+    
+    
+}
+
+.descricao_paragrafo {
+    color: var(--cor-gray-secundary);
+    display: inline-block;
+    
+}
+
+.tela-img {
+    padding: 2em;
+    background-position: center;
+}
+
+.secundario_botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.conteiner_discricao{
+    padding: 2em;
+}
+
+.dispositivos_titulos {
+    font-size: 48px;
+    color: var(--cor-while-principal);
+    
+}
+
+.dispositivos_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.lista_item {
+    font-size: 32px;
+    color: var(--cor-while-principal);
+}
+
+.rodape{
+    text-align: center ;
+}
+
+.rodap_logo {
+    align-items: center;
+}
+
+.rodape_lista {
+    margin-top: 1em;
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+.rodape_link a {
+    margin-left: 1em;
+    color: var(--cor-while-principal);
+    text-decoration: none;
+    
+}
+
+.rodape_texto {
+    font-size: 14px;
+    color: var(--cor-gray-secundary);
+    margin:1em 0;
+}
+
+.rodape_lista a:hover{
+    color: crimson;
+}
+
+.rodape_lista a:active{
+    color: darkred;
+}
